@@ -1,0 +1,670 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
+}
+
+/* NAV-BAR made flex and nested flex used on children */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(163, 163, 163);
+  border-top: 1px solid rgb(163, 163, 163);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 45px;
+  vertical-align: center;
+  background-color: white;
+  opacity: 1;
+  z-index: 3;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  margin-right: 13px;
+}
+
+.nav-left button {
+  height: 35px;
+  border: none;
+  background-color: white;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.nav-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-left a {
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+  color: black;
+  margin-left: 10px;
+}
+
+.nav-right button {
+  cursor: pointer;
+  height: 37px;
+  width: auto;
+  background-color: rgb(86, 123, 149);
+  border-radius: 4px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  margin-right: 7px;
+}
+
+.nav-left img {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.nav-middle img {
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+}
+
+/* PAGE CONTAINER */
+
+.first-container {
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+  font-weight: 700;
+  background-color: white;
+  height: 110px;
+  width: 40%;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 47px;
+}
+
+.first-fig-desc {
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.first-container h1 {
+  font-size: 28px;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+.second-container {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
+.second-container img {
+  height: 500px;
+  width: 70%;
+}
+
+.first-discription {
+  display: flex;
+  justify-content: center;
+  color: #9a9a9a;
+  font-size: 13px;
+}
+
+.first-discription div {
+  width: 70%;
+  font-size: 16px;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.author a {
+  text-decoration: none;
+  color: black;
+}
+
+.author p {
+  width: 50%;
+  align-items: center;
+  font-weight: 800;
+  color: #333;
+  margin-top: 20px;
+}
+
+.third-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.third-container p {
+  width: 50%;
+  color: #333;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.date-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  margin-left: 25%;
+}
+
+.date-social-icons li {
+  display: inline-flex;
+  justify-content: space-around;
+  height: 25px;
+  width: 25px;
+}
+
+.social-btn {
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px #eee solid;
+  background-color: rgb(238, 238, 238);
+  padding: 1px;
+}
+
+.social-btn:hover {
+  background-color: white;
+}
+
+/* Design With Grid */
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.inflation-items {
+  grid-column: 2/5;
+}
+
+.inflation-item {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.inflation-img1 {
+  width: 100%;
+}
+
+/* Positioning Text on the Inflation Theory */
+
+.box {
+  position: absolute;
+  width: 23%;
+  font-size: 16px;
+}
+
+.line-one {
+  top: 24%;
+}
+
+.line-two {
+  top: 75%;
+}
+
+.box1,
+.box5 {
+  left: 1%;
+}
+
+.box2,
+.box6 {
+  left: 26%;
+}
+
+.box3,
+.box7 {
+  left: 51%;
+}
+
+.box4,
+.box8 {
+  left: 76%;
+}
+
+.box .bold {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* End of positioning */
+
+.next2-footer-li a {
+  font-size: 12px;
+  color: rgb(154, 154, 154);
+  text-decoration: none;
+}
+
+.list-articls h1 a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.bn-div span a {
+  color: rgb(171, 190, 202);
+  font-size: 15px;
+}
+
+.third-container p a {
+  color: #326891;
+}
+
+.article p a {
+  color: #326891;
+}
+
+.nav-right button a {
+  color: white;
+  text-decoration: none;
+}
+
+.popular-space h1 {
+  padding-bottom: 25px;
+  font-weight: 700;
+}
+
+.popular-space h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.links-end-1 ul li a,
+.links-end-2 ul li a {
+  color: rgb(71, 71, 71);
+}
+
+.links-end ul li {
+  line-height: 25px;
+}
+
+.links-end ul li a {
+  text-decoration: none;
+}
+
+.article p a:hover {
+  text-decoration: none;
+}
+
+.grid-section .article {
+  grid-column: 3/4;
+}
+
+.ppl-item p {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.3px;
+  color: rgb(153, 153, 153);
+  text-transform: capitalize;
+}
+
+.grid-section .article p {
+  color: #333;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.grid-section .inflation-theory {
+  grid-column: 2/5;
+}
+
+.satellite img {
+  width: 100%;
+  padding-top: 20px;
+  height: 400px;
+}
+
+.grid-section .youtube {
+  grid-column: 3/4;
+}
+
+.grid-section .youtube .y-video {
+  width: 100%;
+  height: 350px;
+  padding-top: 20px;
+}
+
+.y-tube-caption {
+  padding-top: 16px;
+  display: inline-block;
+  color: #9a9a9a;
+  font-size: 13px;
+}
+
+.satellite {
+  grid-column: 3/4;
+}
+
+.satellite .telescope {
+  padding-top: 10px;
+  display: inline-block;
+  color: #9a9a9a;
+  font-size: 16px;
+}
+
+.satellite .telescope .steffen {
+  padding-top: 8px;
+  display: inline-block;
+  color: #9a9a9a;
+  font-size: 13px;
+}
+
+.inflation-items .caps-style {
+  color: #9a9a9a;
+  font-size: 16px;
+}
+
+.line-4-larry {
+  border-bottom: black solid 1px;
+  margin-right: 93%;
+  margin-left: 1%;
+  padding-top: 20px;
+}
+
+.image-title-2 {
+  font-size: 14px;
+  padding: 10px 0;
+  padding-left: 7px;
+}
+
+.third-container p a:hover {
+  text-decoration: none;
+}
+
+.links-end-2 li .underline a {
+  text-decoration: underline;
+}
+
+.popular-space .ppl-item h3 a {
+  text-decoration: none;
+  color: #999;
+}
+
+.popular-space .ppl-item h2 a {
+  text-decoration: none;
+  color: #121212;
+  font-weight: 500;
+}
+
+.article .order p,
+.article .order p span a {
+  color: #666;
+  font-size: 13px;
+}
+
+/* Partner */
+
+.pre-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 6vw 0 6vw;
+}
+
+.popular-space {
+  width: 70%;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+}
+
+.space {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ppl-item {
+  width: 32%;
+  margin-right: 10px;
+}
+
+.last-item {
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+.ppl-item h2 {
+  color: rgb(18, 18, 18);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 22px;
+  width: 90%;
+}
+
+.ppl-item h3 {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  color: #888;
+}
+
+.ppl-item img {
+  width: 100%;
+  display: block;
+}
+
+.bn-div img {
+  height: 30px;
+  width: 200px;
+}
+
+.grid-section .inflation-theory img {
+  width: 100%;
+  height: 650px;
+}
+
+.most-popular {
+  width: 30%;
+  padding-top: 25px;
+  margin-left: 40px;
+  border-top: 1px solid gray;
+}
+
+.most-popular h1 {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.list-articls h1 {
+  margin-bottom: 20px;
+  border-top: 1px solid rgb(226, 226, 226);
+  padding-top: 20px;
+  font-size: 1.1875rem;
+  line-height: 1.4375rem;
+}
+
+/* End of Code */
+
+/* Link Ends Section */
+
+.links-end {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.links-end-1 {
+  flex: 5;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links-end-2 h3,
+.links-end-1 ul li h3 {
+  font-weight: 600;
+  color: rgb(75, 75, 75);
+}
+
+.links-end-2 .text-color-links {
+  font-weight: 700;
+  color: black;
+}
+
+.links-end-2 {
+  flex: 1;
+  border-left: 1px rgb(163, 163, 163) solid;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.links2-images {
+  height: 13px;
+  width: 13px;
+}
+
+.bottom-nav {
+  display: inline-block;
+  background-color: none;
+  width: 100%;
+}
+
+.line-2 {
+  border-bottom: 2px double rgb(226, 226, 226);
+  margin-right: 54px;
+  padding: 10px;
+  margin-left: 54px;
+  margin-bottom: 1px;
+}
+
+.bottom-nav .line-2 h6,
+.bottom-nav .line-2 p {
+  display: none;
+}
+
+.line .draw-line p,
+.line .draw-line h6 {
+  display: none;
+}
+
+.bn-div,
+.line-3 {
+  margin-left: 54px;
+  border-top: 2px double rgb(226, 226, 226);
+  margin-right: 54px;
+  padding: 10px;
+}
+
+.bn-div img:hover {
+  cursor: pointer;
+}
+
+.bn-div span {
+  float: right;
+  padding-right: 54px;
+}
+
+.next2-footer {
+  margin-bottom: 70px;
+}
+
+.next2-footer-li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+  margin-top: 10px;
+}
+
+.next2-footer .line-3 h6,
+.next2-footer .line-3 p {
+  display: none;
+}
+
+.social-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.end-social-btn {
+  width: 300px;
+  height: 40px;
+  background-color: #567b95;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Footer Section */
+
+.footer-tab {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 60px;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.footer-tab .footer-text {
+  flex: 4;
+  text-align: center;
+  margin-left: 240px;
+}
+
+.footer-tab .footer-imgs {
+  flex: 1;
+}
+
+.footer-tab .footer-imgs div {
+  display: inline-block;
+  height: 30px;
+}
+
+.footer-tab .footer-imgs button img {
+  height: 16px;
+  width: 16px;
+}
+
+.btn-height {
+  height: 25px;
+  background-color: white;
+  border: none;
+}
+
+.btn-height:hover {
+  cursor: pointer;
+}
+
+.footer-text:hover {
+  cursor: pointer;
+}
